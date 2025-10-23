@@ -1,0 +1,42 @@
+input[type="radio"] {
+  display: none;
+}
+
+.hobbies-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%;
+}
+
+.hobbies-section {
+  position: relative;
+  overflow: hidden
+}
+
+.hobby {
+  flex: 0 0 100%;
+}
+
+#slide1:checked ~ .hobbies-container {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .hobbies-container {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .hobbies-container {
+  transform: translateX(-200%);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.nav {
+  cursor: pointer;
+  user-select: none;
+}
