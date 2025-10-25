@@ -6,51 +6,106 @@
   <link rel="stylesheet" href="css/style.css">
   <title>DesafioDev</title>
 </head>
-    <body>
-    <header class="banner">
-        <div class="banner-content">
-        <h1>Lorem Ipsum</h1>
-        <h2>Lorem ipsum dolor sit ameto</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+<body>
+    <header>
+    <div class="top-bar">
+        <div class="social-links">
+        <a href="https://github.com/SunIord" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/github_icon.svg.svg" width="32" height="48"
+            alt="github icon">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-alves-de-moraes-95445a335/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/linkedin-svgrepo-com.svg" width="32" height="48"
+            alt="linkedin icon">
+        </a>
+        <a href="./assets/@jm0raes.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/instagram-svgrepo-com.svg" width="32" height="48"
+            alt="instagram icon">
+        </a>
         </div>
+    </div>
+
     </header>
 
+    <section class="me">
+    <div class="me-content">
+        <div class="me-text">
+        <h2>Software Engineer and Musician</h2>
+        <h1>João Moraes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dolor vel sapien tincidunt consequat.</p>
+        <div class="me-buttons">
+            <button>Projects</button>
+            <button>Arara</button>
+        </div>
+        </div>
+        <div class="me-image">
+        <img src="me.jpg" alt="me">
+        </div>
+    </div>
+    </section>
+
     <main class="hobbies-section">
-        <!-- Inputs para controlar o slider -->
         <input type="radio" name="slider" id="slide1" checked>
         <input type="radio" name="slider" id="slide2">
         <input type="radio" name="slider" id="slide3">
 
         <div class="hobbies-container">
-        <section class="hobby" id="hobby-1">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit — sed do eiusmod tempor</p>
-            <img src="assets/a.jpg" alt="a">
-        </section>
+            <section class="hobby layout-1" id="hobby-1">
+                <div class="text">
+                <h3>a</h3>
+                <p>a</p>
+                </div>
+                <div class="image">
+                <img src="assets/a.jpg" alt="a">
+                </div>
+            </section>
 
-        <section class="hobby" id="hobby-2">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit — sed do eiusmod tempor</p>
-            <img src="assets/b.jpg" alt="b">
-        </section>
+            <section class="hobby layout-2" id="hobby-2">
+                <div class="text">
+                <h3>b</h3>
+                <p>b</p>
+                </div>
+                <div class="image">
+                <img src="assets/b.jpg" alt="b">
+                </div>
+            </section>
 
-        <section class="hobby" id="hobby-3">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit — sed do eiusmod tempor</p>
-            <img src="assets/c.jpg" alt="c">
-        </section>
+            <section class="hobby" id="hobby-musica">
+            <div class="hobby-content">
+                <div class="hobby-text">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vel ligula ut lectus ultricies laoreet vel at enim. Curabitur feugiat urna eu nunc aliquet, sit amet accumsan nisi commodo.</p>
+                </div>
+
+                <div class="hobby-media">
+                <img src="assets/metralha.jpg" alt="a">
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/qi2Gn1QhJeE?si=zr-va0OJ-kIVkJFG&amp;start=39" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            </section>
         </div>
 
-        <!-- Controles de navegação -->
         <div class="controls">
-        <label for="slide1" class="nav prev">⟵</label>
+        <label for="slide1" class="nav prev">•</label>
         <label for="slide2" class="nav">•</label>
-        <label for="slide3" class="nav next">⟶</label>
+        <label for="slide3" class="nav next">•</label>
         </div>
     </main>
     
     <footer>
         <p>Lorem Ipsum</p>
     </footer>
-    </body>
+</body>
 </html>
