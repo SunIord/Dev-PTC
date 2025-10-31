@@ -32,10 +32,11 @@
         <div class="me-text">
         <h2>Software Engineer and Musician</h2>
         <h1>João Moraes</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dolor vel sapien tincidunt consequat.</p>
+        <p>Passionate about technology and music, I create solutions that blend logic and creativity.</p>
         <div class="me-buttons">
-            <button>Projects</button>
-            <button>Arara</button>
+            <button id="about-me-btn">About Me</button>
+            <button id="projects-btn">Projects</button>
+            <button id="metralha-btn">Metralha</button>
         </div>
         </div>
         <div class="me-image">
@@ -52,8 +53,8 @@
         <div class="hobbies-container">
             <section class="hobby layout-1" id="hobby-1">
                 <div class="text">
-                <h3>a</h3>
-                <p>a</p>
+                <h3>About Me</h3>
+                <p>Information about me and my background...</p>
                 </div>
                 <div class="image">
                 <img src="assets/a.jpg" alt="a">
@@ -62,8 +63,8 @@
 
             <section class="hobby layout-2" id="hobby-2">
                 <div class="text">
-                <h3>b</h3>
-                <p>b</p>
+                <h3>Projects</h3>
+                <p>My projects and work portfolio...</p>
                 </div>
                 <div class="image">
                 <img src="assets/b.jpg" alt="b">
@@ -73,8 +74,8 @@
             <section class="hobby" id="hobby-musica">
             <div class="hobby-content">
                 <div class="hobby-text">
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vel ligula ut lectus ultricies laoreet vel at enim. Curabitur feugiat urna eu nunc aliquet, sit amet accumsan nisi commodo.</p>
+                    <h3>Metralha</h3>
+                    <p>My music project and creative work...</p>
                 </div>
 
                 <div class="hobby-media">
@@ -103,9 +104,27 @@
         <label for="slide3" class="nav next">•</label>
         </div>
     </main>
-    
-    <footer>
-        <p>Lorem Ipsum</p>
-    </footer>
+
+    <script>
+        function goToSlide(slideNumber) {
+            document.querySelector('.hobbies-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+            
+            document.getElementById(`slide${slideNumber}`).checked = true;
+        }
+
+        document.getElementById('about-me-btn').addEventListener('click', function() {
+            goToSlide(1);
+        });
+
+        document.getElementById('projects-btn').addEventListener('click', function() {
+            goToSlide(2);
+        });
+
+        document.getElementById('metralha-btn').addEventListener('click', function() {
+            goToSlide(3);
+        });
+    </script>
 </body>
 </html>
