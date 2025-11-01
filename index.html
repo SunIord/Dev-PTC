@@ -7,99 +7,121 @@
   <title>DesafioDev</title>
 </head>
 <body>
-    <header>
-    <div class="top-bar">
-        <div class="social-links">
-        <a href="https://github.com/SunIord" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/github_icon.svg.svg" width="32" height="48"
-            alt="github icon">
+  <header>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/SunIord" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-alves-de-moraes-95445a335/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/linkedin-svgrepo-com.svg" width="32" height="48"
-            alt="linkedin icon">
+        <a href="https://www.linkedin.com/in/joão-pedro-alves-de-moraes-95445a335/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
         </a>
-        <a href="mailto:jpam@cin.ufpe.br" rel="noopener noreferrer">
-            <img src="./assets/email-svgrepo-com.svg" width="32" height="48" 
-            alt="email icon">
+        <a href="mailto:jpam@cin.ufpe.br" rel="noopener noreferrer" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </a>
-        </div>
+      </div>
     </div>
+  </header>
 
-    </header>
-
-    <section class="me">
-    <div class="me-content">
-        <div class="me-text">
-        <h2>Software Engineer and Musician</h2>
-        <h1>João Moraes</h1>
-        <p>Passionate about technology and music, I create solutions that blend logic and creativity.</p>
-        <div class="me-buttons">
-            <button class="style-button">About Me</button>
-            <button class="style-button">Projects</button>
-            <button class="style-button">Metralha</button>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Software Engineer and Musician</h2>
+          <h1>João Moraes</h1>
+          <p>Passionate about technology and music, I create solutions that blend logic and creativity.</p>
+          <div class="hero-buttons">
+            <label for="slide1" class="btn">About Me</label>
+            <label for="slide2" class="btn">Projects</label>
+            <label for="slide3" class="btn">Metralha</label>
+          </div>
         </div>
+        <div class="hero-image">
+          <img src="assets/me.jpg" alt="João Moraes" class="profile-image">
         </div>
-        <div class="me-image">
-        <img src="me.jpg" alt="me">
-        </div>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <main class="hobbies-section">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <input type="radio" name="slider" id="slide3">
+  <main class="slides-section">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
 
-        <div class="hobbies-container">
-            <section class="hobby layout-1" id="hobby-1">
-                <div class="text">
-                <h3>About Me</h3>
-                <p>Hello World! I'm João Pedro, and I’m currently studying Computer Science at CIn. I enjoy playing guitar and writing music in my free time. A fun fact about me: I never learned how to ride a bike.</p>
-            </section>
+    <div class="slides-container">
+      <div class="slide" id="about-slide">
+        <div class="slide-content">
+          <div class="text-content">
+            <h3>About Me</h3>
+            <p>Hello World! I'm João Pedro, and I'm currently studying Computer Science at CIn. I enjoy playing guitar and writing music in my free time. A fun fact about me: I never learned how to ride a bike.</p>
+          </div>
+        </div>
+      </div>
 
-            <section class="hobby" id="hobby-2">
-                <div class="hobby-content">
-                    <div class="text">
-                        <h3>Projects</h3>
-                        <p>Here are some of the projects I've developed:</p>
-
-                        <div class="project">
-                            <h4>Spotilytics</h4>
-                            <p>An interactive web application built with Streamlit that consumes Spotify's API to display visual insights about songs, artists, and playlists.</p>
-                        </div>
-
-                        <div class="project">
-                            <h4>ResumeAI</h4>
-                            <p>A project developed for the Software Development course, a tool that uses generative AI to analyze and summarize documents.</p>
-                        </div>
-                    </div>
-
-                    <div class="images">
-                        <img src="assets/spotilytics.jpg" alt="Spotilytics">
-                        <img src="assets/resumeai.jpg" alt="ResumeAI">
-                    </div>
+      <div class="slide" id="slide-2">
+        <div class="container">
+          <div class="slide-content">
+            <div class="text-content">
+              <h3>Projects</h3>
+              <p class="subtitle">Here are some of the projects I've developed:</p>
+              <div class="projects-grid">
+                <div class="project-card">
+                  <h4>
+                    <a href="https://github.com/SunIord/Spotilytics" target="_blank" rel="noopener noreferrer">
+                      Spotilytics
+                    </a>
+                  </h4>
+                  <p>An interactive web application built with Streamlit that consumes Spotify's API to display visual insights about songs, artists, and playlists.</p>
                 </div>
-            </section>
-
-            <section class="hobby" id="hobby-musica">
-            <div class="hobby-content">
-                <div class="hobby-text">
-                    <h3>Metralha</h3>
-                    <p>Rhythm Guitarrist and lyricist at <strong>Metralha</strong>, a thrash metal band that explores deep, dark and human themes. Music lets me channel emotion into something powerful and real.</p>
+                <div class="project-card">
+                  <h4>
+                    <a href="https://github.com/fabriely/ResumeAI" target="_blank" rel="noopener noreferrer">
+                      ResumeAI
+                    </a>
+                  </h4>
+                  <p>A project developed for the Software Development course, a tool that uses generative AI to analyze and summarize documents.</p>
                 </div>
-
-                <div class="hobby-media">
-                <img src="assets/metralha.jpg" alt="a">
-                </div>
+              </div>
             </div>
-            </section>
+            <div class="image-content">
+              <div class="projects-images">
+                <img src="assets/spotilytics.png" alt="Spotilytics" class="project-image">
+                <img src="assets/resumeai.png" alt="ResumeAI" class="project-image">
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="controls">
-        <label for="slide1" class="nav prev">•</label>
-        <label for="slide2" class="nav">•</label>
-        <label for="slide3" class="nav next">•</label>
+      <div class="slide" id="metralha-slide">
+        <div class="slide-content">
+          <div class="text-content">
+            <h3>Metralha</h3>
+            <p>Rhythm Guitarrist and lyricist at <strong>Metralha</strong>, a thrash metal band that explores deep, dark and human themes. Music lets me channel emotion into something powerful and real.</p>
+          </div>
+          <div class="image-content">
+            <div class="metralha-media">
+              <img src="assets/metralha.jpg" alt="Metralha Band" class="band-image">
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label for="slide1" class="control-dot"></label>
+      <label for="slide2" class="control-dot"></label>
+      <label for="slide3" class="control-dot"></label>
+    </div>
+  </main>
 </body>
 </html>
