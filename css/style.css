@@ -208,15 +208,15 @@ header {
   gap: 1rem;
 }
 
-.me-buttons button {
+/* Alterado para .style-button e removido cursor pointer */
+.me-buttons .style-button {
   padding: 0.75rem 1.25rem;
   border: 1px solid #000;
   background: none;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.me-buttons button:hover {
+.me-buttons .style-button:hover {
   background: #000;
   color: white;
 }
@@ -267,60 +267,198 @@ input[type="radio"] {
   overflow: hidden;
 }
 
-/* ====== LAYOUT ESPECÍFICO PARA O SLIDE 3 (MÚSICA) ====== */
-#hobby-musica .hobby-content {
+/* ====== AJUSTES GERAIS DOS SLIDES ====== */
+.hobbies-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* Reduzido de 80px para 60px */
+}
+
+.hobby {
+  flex: 0 0 100%;
+  height: 90vh; /* Reduzido de 100% para 90vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ====== LAYOUT PARA SLIDE 1 (ABOUT ME) ====== */
+#hobby-1 {
+  padding: 0 2rem;
+}
+
+#hobby-1 .hobby-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 1rem 0; /* Adicionado padding para reduzir altura */
+}
+
+#hobby-1 .text {
+  flex: 1;
+  text-align: left;
+  max-width: 500px; /* Reduzido ligeiramente */
+}
+
+#hobby-1 .text h3 {
+  font-size: 2.5rem; /* Reduzido de 3rem */
+  margin-bottom: 1.5rem;
+}
+
+#hobby-1 .text p {
+  font-size: 1.1rem; /* Reduzido de 1.3rem */
+  line-height: 1.6;
+}
+
+#hobby-1 .image img {
+  max-width: 380px; /* Reduzido de 450px */
+}
+
+/* ====== LAYOUT PARA SLIDE 2 (PROJECTS) ====== */
+#hobby-2 {
+  padding: 0 2rem;
+}
+
+#hobby-2 .hobby-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
   max-width: 1200px;
-  padding: 0 2rem;
+  height: 100%;
+  padding: 1rem 0; /* Adicionado padding para reduzir altura */
 }
 
-#hobby-musica .hobby-text {
+#hobby-2 .text {
   flex: 1;
   text-align: left;
-  max-width: 500px;
+  max-width: 500px; /* Reduzido de 550px */
+}
+
+#hobby-2 .text h3 {
+  font-size: 2.5rem; /* Reduzido de 3rem */
+  margin-bottom: 1.2rem;
+}
+
+#hobby-2 .project {
+  margin-bottom: 1.2rem; /* Reduzido de 1.5rem */
+  padding: 1rem;
+}
+
+#hobby-2 .images img {
+  height: 160px; /* Reduzido de 180px */
+}
+
+/* ====== LAYOUT PARA SLIDE 3 (MÚSICA) ====== */
+#hobby-musica .hobby-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem; /* Reduzido de 3rem */
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 2rem; /* Adicionado padding vertical */
+  height: 100%;
 }
 
 #hobby-musica .hobby-text h3 {
-  font-size: 2rem;
+  font-size: 2.2rem; /* Reduzido de 2.5rem */
   margin-bottom: 1rem;
 }
 
 #hobby-musica .hobby-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-#hobby-musica .hobby-media {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2rem;
+  font-size: 1.1rem; /* Reduzido de 1.2rem */
 }
 
 .hobby-media img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.video-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  max-width: 350px; /* Reduzido de 400px */
 }
 
 .video-wrapper iframe {
-  width: 100%;
-  max-width: 500px;
-  height: 280px;
-  border-radius: 8px;
+  max-width: 450px; /* Reduzido de 500px */
+  height: 250px; /* Reduzido de 280px */
+}
+
+/* ====== CONTROLES ====== */
+.controls {
+  position: absolute;
+  bottom: 15px; /* Ajustado para ficar mais visível */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 5;
+}
+
+/* RESPONSIVIDADE - Ajustes para telas menores */
+@media (max-width: 900px) {
+  .hobbies-section {
+    padding-top: 50px;
+  }
+  
+  .hobby {
+    height: 85vh;
+  }
+  
+  #hobby-1 .hobby-content,
+  #hobby-2 .hobby-content,
+  #hobby-musica .hobby-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem 0;
+  }
+  
+  #hobby-1 .image img {
+    max-width: 300px;
+  }
+  
+  #hobby-2 .images img {
+    height: 140px;
+  }
+  
+  .video-wrapper iframe {
+    max-width: 400px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hobbies-section {
+    padding-top: 40px;
+  }
+  
+  .hobby {
+    height: 80vh;
+  }
+  
+  .controls {
+    bottom: 10px;
+  }
+  
+  #hobby-1 .image img {
+    max-width: 250px;
+  }
+  
+  #hobby-2 .images img {
+    height: 120px;
+  }
+  
+  .video-wrapper iframe {
+    max-width: 350px;
+    height: 200px;
+  }
 }
 
 /* Corrige a exibição dos slides */

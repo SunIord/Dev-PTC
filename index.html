@@ -18,9 +18,9 @@
             <img src="./assets/linkedin-svgrepo-com.svg" width="32" height="48"
             alt="linkedin icon">
         </a>
-        <a href="./assets/@jm0raes.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/instagram-svgrepo-com.svg" width="32" height="48"
-            alt="instagram icon">
+        <a href="mailto:jpam@cin.ufpe.br" rel="noopener noreferrer">
+            <img src="./assets/email-svgrepo-com.svg" width="32" height="48" 
+            alt="email icon">
         </a>
         </div>
     </div>
@@ -34,9 +34,9 @@
         <h1>João Moraes</h1>
         <p>Passionate about technology and music, I create solutions that blend logic and creativity.</p>
         <div class="me-buttons">
-            <button id="about-me-btn">About Me</button>
-            <button id="projects-btn">Projects</button>
-            <button id="metralha-btn">Metralha</button>
+            <button class="style-button">About Me</button>
+            <button class="style-button">Projects</button>
+            <button class="style-button">Metralha</button>
         </div>
         </div>
         <div class="me-image">
@@ -54,20 +54,30 @@
             <section class="hobby layout-1" id="hobby-1">
                 <div class="text">
                 <h3>About Me</h3>
-                <p>Information about me and my background...</p>
-                </div>
-                <div class="image">
-                <img src="assets/a.jpg" alt="a">
-                </div>
+                <p>Hello World! I'm João Pedro, and I’m currently studying Computer Science at CIn. I enjoy playing guitar and writing music in my free time. A fun fact about me: I never learned how to ride a bike.</p>
             </section>
 
-            <section class="hobby layout-2" id="hobby-2">
-                <div class="text">
-                <h3>Projects</h3>
-                <p>My projects and work portfolio...</p>
-                </div>
-                <div class="image">
-                <img src="assets/b.jpg" alt="b">
+            <section class="hobby" id="hobby-2">
+                <div class="hobby-content">
+                    <div class="text">
+                        <h3>Projects</h3>
+                        <p>Here are some of the projects I've developed:</p>
+
+                        <div class="project">
+                            <h4>Spotilytics</h4>
+                            <p>An interactive web application built with Streamlit that consumes Spotify's API to display visual insights about songs, artists, and playlists.</p>
+                        </div>
+
+                        <div class="project">
+                            <h4>ResumeAI</h4>
+                            <p>A project developed for the Software Development course, a tool that uses generative AI to analyze and summarize documents.</p>
+                        </div>
+                    </div>
+
+                    <div class="images">
+                        <img src="assets/spotilytics.jpg" alt="Spotilytics">
+                        <img src="assets/resumeai.jpg" alt="ResumeAI">
+                    </div>
                 </div>
             </section>
 
@@ -75,24 +85,11 @@
             <div class="hobby-content">
                 <div class="hobby-text">
                     <h3>Metralha</h3>
-                    <p>My music project and creative work...</p>
+                    <p>Rhythm Guitarrist and lyricist at <strong>Metralha</strong>, a thrash metal band that explores deep, dark and human themes. Music lets me channel emotion into something powerful and real.</p>
                 </div>
 
                 <div class="hobby-media">
                 <img src="assets/metralha.jpg" alt="a">
-                </div>
-
-                <div class="video-wrapper">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/qi2Gn1QhJeE?si=zr-va0OJ-kIVkJFG&amp;start=39" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
                 </div>
             </div>
             </section>
@@ -104,27 +101,5 @@
         <label for="slide3" class="nav next">•</label>
         </div>
     </main>
-
-    <script>
-        function goToSlide(slideNumber) {
-            document.querySelector('.hobbies-section').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-            
-            document.getElementById(`slide${slideNumber}`).checked = true;
-        }
-
-        document.getElementById('about-me-btn').addEventListener('click', function() {
-            goToSlide(1);
-        });
-
-        document.getElementById('projects-btn').addEventListener('click', function() {
-            goToSlide(2);
-        });
-
-        document.getElementById('metralha-btn').addEventListener('click', function() {
-            goToSlide(3);
-        });
-    </script>
 </body>
 </html>
